@@ -1,0 +1,55 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --track-widget-creation --device-id=ENU7N15A20009733 lib/main.dart
+
+## exception
+
+SocketException: SocketException: Write failed (OS Error: Broken pipe, errno = 32), port = 0
+
+```
+null```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel unknown, v1.7.8+hotfix.4, on Linux, locale en_IN)
+    • Flutter version 1.7.8+hotfix.4 at /home/aditya/Documents/flutter_stable/flutter
+    • Framework revision 20e59316b8 (4 months ago), 2019-07-18 20:04:33 -0700
+    • Engine revision fee001c93f
+    • Dart version 2.4.0
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    • Android SDK at /home/aditya/Android/Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.3
+    • Java binary at: /home/aditya/Documents/android-studio-ide-182.5314842-linux/android-studio/jre/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b49-5587405)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at google-chrome
+
+[✗] Linux toolchain - develop for Linux desktop
+    ✗ clang++ is not installed
+    • GNU Make 4.1
+
+[✓] Android Studio (version 3.5)
+    • Android Studio at /home/aditya/Documents/android-studio-ide-182.5314842-linux/android-studio
+    • Flutter plugin version 41.1.2
+    • Dart plugin version 191.8593
+    • Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b49-5587405)
+
+[✓] VS Code (version 1.40.0)
+    • VS Code at /usr/share/code
+    • Flutter extension version 3.1.0
+
+[✓] Connected device (3 available)
+    • Nexus 6P • ENU7N15A20009733 • android-arm64  • Android 8.1.0 (API 27)
+    • Linux    • Linux            • linux-x64      • Linux
+    • web      • web              • web-javascript • Google Chrome 78.0.3904.108 
+
+
+! Doctor found issues in 1 category.
+```
