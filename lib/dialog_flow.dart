@@ -62,7 +62,8 @@ class _FlutterFactsChatBotState extends State<FlutterFactsChatBot> {
   }
 
   void _submitQuery(String text) {
-    _textController.clear();
+    if(text.isNotEmpty) {
+      _textController.clear();
     Facts message = new Facts(
       text: text,
       name: "User",
@@ -72,6 +73,7 @@ class _FlutterFactsChatBotState extends State<FlutterFactsChatBot> {
       messageList.insert(0, message);
     });
     agentResponse(text);
+    }
   }
 
   @override
